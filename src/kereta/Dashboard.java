@@ -784,14 +784,14 @@ public class Dashboard extends javax.swing.JFrame {
         kelas = comboKelas.getSelectedItem().toString();
         
         if(kelas == "Bisnis"){
-            total = 5000;
+            total = 1000000;
             kelasStatus.setText(kelas);
             jumlahTiket = Integer.parseInt(jumlah.getText());
             hasil = total*jumlahTiket;
             harga.setText(String.valueOf(hasil));
         }
         else if(kelas == "First"){
-            total = 10000;
+            total = 8000000;
             kelasStatus.setText(kelas);
             jumlahTiket = Integer.parseInt(jumlah.getText());
             hasil = total*jumlahTiket;
@@ -990,7 +990,7 @@ public class Dashboard extends javax.swing.JFrame {
         edit_kelas = jComboBox5.getSelectedItem().toString();
         
         if(edit_kelas == "Bisnis"){
-            total = 5000;
+            total = 1000000;
             label11.setText(edit_kelas);
             jumlahTiket = Integer.parseInt(jFormattedTextField1.getText());
             
@@ -998,7 +998,7 @@ public class Dashboard extends javax.swing.JFrame {
             jFormattedTextField2.setText(String.valueOf(hasil));
         }
         else if(edit_kelas == "First"){
-            total = 10000;
+            total = 8000000;
             label11.setText(edit_kelas);
             jumlahTiket = Integer.parseInt(jFormattedTextField1.getText());
             
