@@ -26,14 +26,15 @@ CREATE TABLE IF NOT EXISTS `penerbangan` (
   `kelas` varchar(50) DEFAULT NULL,
   `harga` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_tiket`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 
--- Dumping data for table kereta.penerbangan: ~3 rows (approximately)
+-- Dumping data for table kereta.penerbangan: ~4 rows (approximately)
 /*!40000 ALTER TABLE `penerbangan` DISABLE KEYS */;
 INSERT INTO `penerbangan` (`id_tiket`, `nama_pemesan`, `jenis_penerbangan`, `tujuan`, `jumlah`, `kelas`, `harga`) VALUES
-	(8, 'RESI', 'Domestik', 'Jakarta', 2, 'Bisnis', 10000),
-	(9, 'RESI', 'Domestik', 'Jakarta', 2, 'First', 20000),
-	(10, 'TRETAN', 'Domestik', 'Bandung', 4, 'Bisnis', 20000);
+	(9, 'RIYOI', 'Domestik', 'Bandung', 1, 'Bisnis', 5000),
+	(10, 'RAYAN', 'Domestik', 'Bandung', 2, 'First', 20000),
+	(11, 'TOTOY', 'Internasional', 'Amerika', 4, 'First', 40000),
+	(12, 'NAYA', 'Internasional', 'Malaysia', 1, 'Bisnis', 5000);
 /*!40000 ALTER TABLE `penerbangan` ENABLE KEYS */;
 
 -- Dumping structure for table kereta.user
@@ -44,9 +45,10 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table kereta.user: ~2 rows (approximately)
+-- Dumping data for table kereta.user: ~3 rows (approximately)
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` (`username`, `password`, `level`) VALUES
+	('aceng', 'aceng', 2),
 	('admin', 'admin', 1),
 	('user', 'user', 2);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
